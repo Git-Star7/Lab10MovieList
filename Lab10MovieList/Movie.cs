@@ -42,7 +42,7 @@ namespace Lab10MovieList
             }
             Console.WriteLine();
         }
-        private static List<string> GetCategoryList(List<Movie> movieList)
+        public static List<string> GetCategoryList(List<Movie> movieList)
         {
             List<string> categoryList = new List<string>();
             foreach (Movie movie in movieList)
@@ -52,21 +52,45 @@ namespace Lab10MovieList
                     categoryList.Add(movie.category);
                 }
             }
+            categoryList.Sort();
             return categoryList;
+        }
+        public static void PrintMoviesByType(List<Movie> movieList, int typeSelected)
+        {
+            List<string> listOfCategories = new List<string>();
+            int num = 0;
+            for (int i = 0; i < movieList.Count; i++)
+            {
+                if (typeSelected == GetCategoryList(movieList).IndexOf(movieList[i].category))
+                {
+                    listOfCategories.Add(movieList[i].title);
+                }
+            }
+            listOfCategories.Sort();
+            foreach (string movie in listOfCategories)
+            {
+                num++;
+                Console.WriteLine($"{num}: {movie}");
+            }
         }
         public static void PrintMoviesByType(List<Movie> movieList, string typeSelected)
         {
+            List<string> listOfCategories = new List<string>();
             int num = 0;
             for (int i = 0; i < movieList.Count; i++)
             {
                 if (typeSelected == movieList[i].category)
                 {
-                    num++;
-                    Console.WriteLine($"{num}: {movieList[i].title}");
+                    listOfCategories.Add(movieList[i].title);
                 }
             }
+            listOfCategories.Sort();
+            foreach (string movie in listOfCategories)
+            {
+                num++;
+                Console.WriteLine($"{num}: {movie}");
+            }
         }
-
         #endregion
     }
 }

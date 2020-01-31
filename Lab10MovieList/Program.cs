@@ -21,13 +21,54 @@ namespace Lab10MovieList
                 new Movie("Lord of the Rings", "Fantasy")
             };
 
-            Console.WriteLine("Pick a movie category");
-            Movie.PrintCategoryList(movies);
-            string input = Console.ReadLine();
-            //int input = 0; //get user input
-            Movie.PrintMoviesByType(movies, input);
+            Console.WriteLine("Find a category you like and see the list of movies in that category\n");
 
+            bool continueLoop = true;
+            while (continueLoop == true)
+            {
+                Movie.PrintCategoryList(movies);
+                Movie.PrintMoviesByType(movies, InputIsInt(movies, GetUserInput("Pick a movie category: ")));
+
+                continueLoop = YesOrNo("\nWould you like to pick another category ? (y/n) : ");
+            }
         }
+        
+        public static int InputIsInt(List<Movie> movies, string pick)
+        {
+            try
+            {
+                int intPick = int.Parse(pick) - 1;
+                string tryExceptionT = Movie.GetCategoryList(movies)[intPick];
+                return intPick;
+            }
+            catch
+            {
+                Console.WriteLine("Invalid selection (catch)");
+                return InputIsInt(movies, GetUserInput("Try again "));
+            }
+        }
+        public static bool YesOrNo(string message)
+        {
+            string userContinue = "";
+            while (userContinue != "y" && userContinue != "n")
+            {
+                Console.Write(message);
+                userContinue = Console.ReadLine().ToLower();
 
+                if (userContinue == "n")
+                {
+                    Console.WriteLine("Okay!!");
+                    return false;
+                }
+            }
+            Console.WriteLine();
+            return true;
+        }
+        public static string GetUserInput(string message)
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+            return input;
+        }
     }
 }
