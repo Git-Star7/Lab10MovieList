@@ -1,0 +1,11 @@
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\bin\Debug\netcoreapp3.1\Lab10MovieList.exe
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\bin\Debug\netcoreapp3.1\Lab10MovieList.deps.json
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\bin\Debug\netcoreapp3.1\Lab10MovieList.runtimeconfig.json
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\bin\Debug\netcoreapp3.1\Lab10MovieList.runtimeconfig.dev.json
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\bin\Debug\netcoreapp3.1\Lab10MovieList.dll
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\bin\Debug\netcoreapp3.1\Lab10MovieList.pdb
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\obj\Debug\netcoreapp3.1\Lab10MovieList.csprojAssemblyReference.cache
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\obj\Debug\netcoreapp3.1\Lab10MovieList.AssemblyInfoInputs.cache
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\obj\Debug\netcoreapp3.1\Lab10MovieList.AssemblyInfo.cs
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\obj\Debug\netcoreapp3.1\Lab10MovieList.dll
+C:\Users\Michael\source\repos\Grand Circus\Lab10MovieList\Lab10MovieList\obj\Debug\netcoreapp3.1\Lab10MovieList.pdb
