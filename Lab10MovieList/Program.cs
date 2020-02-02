@@ -43,7 +43,7 @@ namespace Lab10MovieList
             }
             catch
             {
-                Console.WriteLine("Invalid selection (catch)");
+                Console.Write($"Invalid selection, pick a number between 1 - {Movie.GetCategoryList(movies).Count}: ");
                 return InputIsInt(movies, GetUserInput("Try again "));
             }
         }
