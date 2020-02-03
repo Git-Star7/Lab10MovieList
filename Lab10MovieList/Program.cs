@@ -33,7 +33,7 @@ namespace Lab10MovieList
             }
         }
         
-        public static int InputIsInt(List<Movie> movies, string pick)
+        public static int InputIsInt(List<Movie> movies, string pick) //takes in user int input and validates it
         {
             try
             {
@@ -47,7 +47,7 @@ namespace Lab10MovieList
                 return InputIsInt(movies, GetUserInput("Try again "));
             }
         }
-        public static bool YesOrNo(string message)
+        public static bool YesOrNo(string message) //takes user input string to validate y or n
         {
             string userContinue = "";
             while (userContinue != "y" && userContinue != "n")
@@ -64,7 +64,7 @@ namespace Lab10MovieList
             Console.WriteLine();
             return true;
         }
-        public static string GetUserInput(string message)
+        public static string GetUserInput(string message) //displays message and takes user input
         {
             Console.Write(message);
             string input = Console.ReadLine();

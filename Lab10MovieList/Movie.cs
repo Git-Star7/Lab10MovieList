@@ -33,7 +33,7 @@ namespace Lab10MovieList
         #endregion
 
         #region Methods
-        public static void PrintCategoryList(List<Movie> movies)
+        public static void PrintCategoryList(List<Movie> movies) //prints category list
         {
             List<string> categoryList = GetCategoryList(movies);
             for (int i = 0; i < categoryList.Count; i++)
@@ -42,7 +42,7 @@ namespace Lab10MovieList
             }
             Console.WriteLine();
         }
-        public static List<string> GetCategoryList(List<Movie> movieList)
+        public static List<string> GetCategoryList(List<Movie> movieList) //gets the list of categories in a list of movies
         {
             List<string> categoryList = new List<string>();
             foreach (Movie movie in movieList)
@@ -55,7 +55,7 @@ namespace Lab10MovieList
             categoryList.Sort();
             return categoryList;
         }
-        public static void PrintMoviesByType(List<Movie> movieList, int typeSelected)
+        public static void PrintMoviesByType(List<Movie> movieList, int typeSelected) //print movies by category selected with int
         {
             List<string> listOfCategories = new List<string>();
             int num = 0;
@@ -73,7 +73,7 @@ namespace Lab10MovieList
                 Console.WriteLine($"{num}: {movie}");
             }
         }
-        public static void PrintMoviesByType(List<Movie> movieList, string typeSelected)
+        public static void PrintMoviesByType(List<Movie> movieList, string typeSelected) //print movies by category selected with string (unused)
         {
             List<string> listOfCategories = new List<string>();
             int num = 0;
